@@ -1,0 +1,17 @@
+@import './utils/variables';
+@import './utils/mixins';
+// @import './base/reset';
+// @import './components/card';
+@import './pages/login';
+@import './pages/dashboard';
+// @import './pages/history';
+@import './components/navbar';
+@import './pages/nodosCentrales';
+@import './pages/nodosSensores';
+@import './pages/sensorHistory';
+
+body {
+  font-family: sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+}

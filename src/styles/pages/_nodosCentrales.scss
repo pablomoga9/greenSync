@@ -1,0 +1,39 @@
+.container {
+  padding: 2rem;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 1rem;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+
+      a {
+        text-decoration: none;
+        color: #333;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  button {
+    margin-top: 2rem;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #ccc;
+    color: #555;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,42 @@
+@import '../utils/variables';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: $primary-color;
+  color: white;
+
+  a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 1rem;
+    }
+
+    button {
+      background: white;
+      color: $primary-color;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background: darken(white, 5%);
+      }
+    }
+  }
+}
