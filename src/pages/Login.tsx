@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { supabase } from '../services/supabaseClient'
 import { useNavigate } from 'react-router-dom'
 import '../styles/index.scss'
+import greenSyncLogo from '../assets/greenSyncLogo.png'
 
 const Login = () => {
   const navigate = useNavigate()
@@ -18,6 +19,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
+      <img src={greenSyncLogo} alt="Fondo" className="background-image" />
       <h1>Iniciar sesión</h1>
       <form onSubmit={handleLogin}>
         <input
@@ -36,11 +38,10 @@ const Login = () => {
         {error && <p className="error">{error}</p>}
       </form>
       <p className="register-link">
-          ¿No tienes cuenta? <a href="/register">Regístrate aquí</a>
+        ¿No tienes cuenta? <a href="/register">Regístrate aquí</a>
       </p>
     </div>
-    
-  )
+)
 }
 
 export default Login

@@ -1,6 +1,7 @@
 import { useAuth } from '../contexts/AuthContext'
 import { Link } from 'react-router-dom'
 import '../styles/components/_navbar.scss'
+import logo from '../assets/greenSyncLogo.png'
 
 const Navbar = () => {
   const { usuario, logout } = useAuth()
@@ -8,8 +9,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <Link to="/">GreenSync</Link>
+        <img src={logo} alt="" />
         <Link to="/">Nodos Centrales</Link>
+        <Link to="/notificaciones">Notificaciones</Link>  {/* <-- Aquí */}
       </div>
 
       <div className="navbar-right">

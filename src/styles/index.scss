@@ -1,10 +1,6 @@
 @import './utils/variables';
 @import './utils/mixins';
-// @import './base/reset';
-// @import './components/card';
 @import './pages/login';
-@import './pages/dashboard';
-// @import './pages/history';
 @import './components/navbar';
 @import './pages/nodosCentrales';
 @import './pages/nodosSensores';
@@ -12,6 +8,22 @@
 
 body {
   font-family: sans-serif;
-  background-color: $bg-color;
+  background: linear-gradient(270deg, #0d1b0d, #18311d, #254a25, #1b3921, #0d1b0d);
+  background-size: 500% 500%;
+  animation: gradientFlow 30s ease-in-out infinite alternate;
   color: $text-color;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+

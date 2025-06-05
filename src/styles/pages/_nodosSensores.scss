@@ -9,23 +9,7 @@
     list-style: none;
     padding: 0;
 
-    li {
-      margin-bottom: 1rem;
-      padding: 1rem;
-      background: #f9f9f9;
-      border-radius: 8px;
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-
-      a {
-        display: block;
-        text-decoration: none;
-        color: #333;
-
-        &:hover {
-          background-color: #f0f0f0;
-        }
-      }
-    }
+  
   }
 
   button {
@@ -33,8 +17,149 @@
     padding: 0.75rem 1.25rem;
     border: none;
     border-radius: 6px;
-    background-color: #ccc;
-    color: #555;
-    cursor: not-allowed;
+    // background-color: #ccc;
+    color: #d9d9d9;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    &:hover{
+    background-color: green;
+  }
   }
 }
+.container-notificaciones{
+
+  ul{
+    list-style: none;
+    padding: 0;
+    li{
+      gap: 30px;
+      width: 40%;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: #4a4a4a;
+      border-radius: 8px;
+      margin-top: 20px;
+      padding: 0.5rem;
+      button{
+        width: 10%;
+        background-color: #eb8b8b;
+        margin-right: 20px;
+        &:hover{
+        background-color: rgb(173, 62, 62);
+        }
+        img{
+          width: 125%
+        }
+    }
+  }
+  }
+  button {
+    // margin-top: 2rem;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    // background-color: #ccc;
+    color: #d9d9d9;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    &:hover{
+    background-color: green;
+  }
+  }
+}
+.container-sensores {
+  padding: 2rem;
+  
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li{
+      width: 40%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      #sensorCard{
+        position: absolute;
+        z-index: 1;
+      }
+      img{
+        position: relative;
+        z-index: 0;
+        width: 15%;
+        margin-left: auto;
+        opacity: 70%;
+      }
+    }
+  
+  }
+
+  button {
+    margin-top: 2rem;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    // background-color: #ccc;
+    color: #d9d9d9;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    &:hover{
+    background-color: green;
+  }
+  }
+  #sensoresTop{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    input{
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 50%;
+    }
+    #inputDescripcion{
+      height: 100%;
+     
+    }
+    #botonesSensores{
+      display: flex;
+      flex-direction: row;
+      justify-content:baseline;
+      button{
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+#botonEditar{
+  width: 30%;
+}
+
+.tarjeta {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  list-style: none;
+}
+
+.tarjeta-roja {
+  background-color: #ffb8be;
+  color: #721c24;
+  border: 2px solid #da192c;
+}
+
+.tarjeta-verde {
+  background-color: #65ec84;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+

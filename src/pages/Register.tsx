@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { supabase } from '../services/supabaseClient'
 import { useNavigate } from 'react-router-dom'
 import '../styles/index.scss'
+import greenSyncLogo from '../assets/greenSyncLogo.png'
 
 const Register = () => {
   const navigate = useNavigate()
@@ -37,7 +38,8 @@ const Register = () => {
 
   return (
     <div className="login-container">
-      <h1>Registrarse</h1>
+      <img src={greenSyncLogo} alt="" />
+      <h1>Registro</h1>
       <form onSubmit={handleRegister}>
         <input
           type="text"
